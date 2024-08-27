@@ -1,0 +1,127 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: url(./docs/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*  */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13%;
+  position: relative;
+}
+#person {
+  border-radius: 50%;
+  background: #593e73;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  top: -140px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#person img {
+  height: 130px;
+  width: 130px;
+}
+/*  */
+.prestartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.startContainer {
+  background: #c6cff2;
+  height: 400px;
+  width: 580px;
+  border-radius: 60px;
+  box-shadow: 0px 0px 10px 1px rgb(167, 167, 167);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.startMainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#name {
+  height: 65px;
+  width: 500px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nameInput {
+  background: #916cb6;
+  border: none;
+  width: 333px;
+  outline: none;
+  margin: 0px;
+  height: 60px;
+}
+#nameImg {
+  background: #593e73;
+  width: 60px;
+  height: 62px;
+}
+#age {
+  height: 65px;
+  width: 500px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ageImg {
+  background: #593e73;
+  width: 50px;
+  height: 62px;
+}
+#ageInput {
+  background: #916cb6;
+  border: none;
+  width: 333px;
+  outline: none;
+  margin: 0px;
+  height: 60px;
+}
+#nameInput::placeholder,
+#ageInput::placeholder {
+  color: #ffffff;
+  opacity: 0.7;
+}
+.startBtn {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  margin-top: -40px;
+}
+#startBtnA {
+  color: white;
+  padding-top: 35px;
+  width: 275px;
+  background-color: #c6cff2;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 1px rgb(167, 167, 167);
+  z-index: -1;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
