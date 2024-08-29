@@ -140,6 +140,14 @@ nav {
   align-items: center;
   margin-bottom: 65px;
 }
+#readMore {
+ width: max-content;
+ padding: 2px;
+ border-radius: 5px;
+}
+#readMore:hover {
+ color: #c198d9;
+}
 #mainList {
   background-color: rgb(224, 210, 221);
   display: flex;
