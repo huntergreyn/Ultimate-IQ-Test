@@ -1,98 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="main">
-            <!-- images div -->
-            <div class="pDiv">
-            <div id="leftDivP">
-                <p id="leftP1">1</p>
-                <p id="leftP2">Of 30</p>
+      <div class="main">
+        <!-- images div -->
+        <div class="pDiv">
+          <div id="leftDivP">
+            <p id="leftP1">1</p>
+            <p id="leftP2">Of 30</p>
+          </div>
+          <div id="rightDivSpan">
+            <div id="minutes">
+              <p id="rightSpan1">5</p>
+              <p>Minutes</p>
             </div>
-            <div id="rightDivSpan">
-                <div id="minutes">
-                    <p id="rightSpan1">5</p>
-                    <p>Minutes</p>
-                </div>
-                <div id="seconds">
-                    <p id="rightSpan2">00</p>
-                    <p>Seconds</p>
-                </div>
+            <div id="seconds">
+              <p id="rightSpan2">00</p>
+              <p>Seconds</p>
             </div>
-            </div>
-            <div id="whole1" class="wholeImages"> 
-                <div class="mainTestImg">
-                    <img src="./Images/1/test1.png" alt="main image">
-                </div>
-                <div id="q1" class="answerImages">
-                    <img src="./Images/1/1-1.png" alt="image 1" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/1/1-2.png" alt="image 2" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/1/1-3.png" alt="image 3" class="trueImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/1/1-4.png" alt="image 4" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/1/1-5.png" alt="image 5" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/1/1-6.png" alt="image 6" class="falseImg" onclick="ImageClickFunction(this.className)">
-                </div>        
-            </div>
-            <div id="whole2" class="wholeImages"> 
-                <div class="mainTestImg">
-                    <img src="./Images/2/test2.png" alt="main image">
-                </div>
-                <div id="q2" class="answerImages">
-                    <img src="./Images/2/2-1.png" alt="image 1" class="trueImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/2/2-2.png" alt="image 2" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/2/2-3.png" alt="image 3" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/2/2-4.png" alt="image 4" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/2/2-5.png" alt="image 5" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/2/2-6.png" alt="image 6" class="falseImg" onclick="ImageClickFunction(this.className)">
-                </div>        
-            </div>
-            <div id="whole3" class="wholeImages"> 
-                <div class="mainTestImg">
-                    <img src="./Images/3/test3.png" alt="main image">
-                </div>
-                <div id="q3" class="answerImages">
-                    <img src="./Images/3/3-1.png" alt="image 1" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/3/3-2.png" alt="image 2" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/3/3-3.png" alt="image 3" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/3/3-4.png" alt="image 4" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/3/3-5.png" alt="image 5" class="trueImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/3/3-6.png" alt="image 6" class="falseImg" onclick="ImageClickFunction(this.className)">
-                </div>        
-            </div>
-            <div id="whole4" class="wholeImages"> 
-                <div class="mainTestImg">
-                    <img src="./Images/4/test4.png" alt="main image">
-                </div>
-                <div id="q4" class="answerImages">
-                    <img src="./Images/4/4-1.png" alt="image 1" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/4/4-2.png" alt="image 2" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/4/4-3.png" alt="image 3" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/4/4-4.png" alt="image 4" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/4/4-5.png" alt="image 5" class="trueImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/4/4-6.png" alt="image 6" class="falseImg" onclick="ImageClickFunction(this.className)">
-                </div>        
-            </div>
-            <div id="whole5" class="wholeImages"> 
-                <div class="mainTestImg">
-                    <img src="./Images/1/test1.png" alt="main image">
-                </div>
-                <div id="q5" class="answerImages">
-                    <img src="./Images/6/6-1.png" alt="image 1" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/6/6-2.png" alt="image 2" class="trueImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/6/6-3.png" alt="image 3" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/6/6-4.png" alt="image 4" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/6/6-5.png" alt="image 5" class="falseImg" onclick="ImageClickFunction(this.className)">
-                    <img src="./Images/6/6-6.png" alt="image 6" class="falseImg" onclick="ImageClickFunction(this.className)">
-                </div>        
-            </div>
+          </div>
         </div>
+        <div id="whole1" class="wholeImages">
+          <div class="mainTestImg">
+            <img src="./Images/1/test1.png" alt="main image" />
+          </div>
+          <div>
+            <div id="q1" class="answerImages">
+              <img
+                src="./Images/1/1-1.png"
+                alt="image 1"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/1/1-2.png"
+                alt="image 2"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/1/1-3.png"
+                alt="image 3"
+                class="trueImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/1/1-4.png"
+                alt="image 4"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/1/1-5.png"
+                alt="image 5"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/1/1-6.png"
+                alt="image 6"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="whole2" class="wholeImages">
+          <div class="mainTestImg">
+            <img src="./Images/2/test2.png" alt="main image" />
+          </div>
+          <div>
+            <div id="q2" class="answerImages">
+              <img
+                src="./Images/2/2-1.png"
+                alt="image 1"
+                class="trueImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/2/2-2.png"
+                alt="image 2"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/2/2-3.png"
+                alt="image 3"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/2/2-4.png"
+                alt="image 4"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/2/2-5.png"
+                alt="image 5"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/2/2-6.png"
+                alt="image 6"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="whole3" class="wholeImages">
+          <div class="mainTestImg">
+            <img src="./Images/3/test3.png" alt="main image" />
+          </div>
+          <div>
+            <div id="q3" class="answerImages">
+              <img
+                src="./Images/3/3-1.png"
+                alt="image 1"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/3/3-2.png"
+                alt="image 2"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/3/3-3.png"
+                alt="image 3"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/3/3-4.png"
+                alt="image 4"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/3/3-5.png"
+                alt="image 5"
+                class="trueImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/3/3-6.png"
+                alt="image 6"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="whole4" class="wholeImages">
+          <div class="mainTestImg">
+            <img src="./Images/4/test4.png" alt="main image" />
+          </div>
+          <div>
+            <div id="q4" class="answerImages">
+              <img
+                src="./Images/4/4-1.png"
+                alt="image 1"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/4/4-2.png"
+                alt="image 2"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/4/4-3.png"
+                alt="image 3"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/4/4-4.png"
+                alt="image 4"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/4/4-5.png"
+                alt="image 5"
+                class="trueImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/4/4-6.png"
+                alt="image 6"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="whole5" class="wholeImages">
+          <div class="mainTestImg">
+            <img src="./Images/1/test1.png" alt="main image" />
+          </div>
+          <div>
+            <div id="q5" class="answerImages">
+              <img
+                src="./Images/6/6-1.png"
+                alt="image 1"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/6/6-2.png"
+                alt="image 2"
+                class="trueImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/6/6-3.png"
+                alt="image 3"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/6/6-4.png"
+                alt="image 4"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/6/6-5.png"
+                alt="image 5"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+              <img
+                src="./Images/6/6-6.png"
+                alt="image 6"
+                class="falseImg"
+                onclick="ImageClickFunction(this.className)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./testPages.js" ></script>
-</body>
+    <script src="./testPages.js"></script>
+  </body>
 </html>
