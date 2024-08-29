@@ -1,4 +1,5 @@
 'use strict'
+///result page js starts
 const containerTag = document.createElement('div')
 containerTag.classList.add('container')
 document.body.append(containerTag)
@@ -46,15 +47,25 @@ containerTagSecondDiv_DivSecondDiv.append(containerTagSecondDiv_DivSecondDivP1)
 //Second p tag
 const containerTagSecondDiv_DivSecondDivP2 = document.createElement('p')
 containerTagSecondDiv_DivSecondDivP2.id = 'midP'
-containerTagSecondDiv_DivSecondDivP2.textContent = 'IQ'
 containerTagSecondDiv_DivSecondDiv.append(containerTagSecondDiv_DivSecondDivP2)
 //mid p IQQQ
 const IQDiv = document.createElement('div')
 IQDiv.id = 'iqDiv'
 containerTagSecondDiv_DivSecondDivP2.append(IQDiv)
-const IQ = document.createElement('a')
-IQ.text = '61'
-IQ.id = 'iq'
+
+///
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the iqScore from local storage
+    const iqScore = localStorage.getItem('iqScore'); // Retrieve the number
+
+    // Display the IQ score in a <p> tag
+    document.getElementById('iqScoreDisplay').innerHTML = `IQ Score: <span>${iqScore}</span>`;
+});
+///
+
+const IQ = document.createElement('a');
+IQ.id = 'iqScoreDisplay'
 IQDiv.append(IQ)
 //Third p tag
 const containerTagSecondDiv_DivSecondDivP3 = document.createElement('p')
@@ -72,3 +83,4 @@ containerTagThirdDivA.href = 'https://alirezanoshad.github.io/IQ-quiz/'
 containerTagThirdDivA.id = 'startBtnA'
 containerTagThirdDivA.textContent = 'START AGAIN'
 containerTagThirdDiv.append(containerTagThirdDivA)
+
