@@ -89,6 +89,11 @@ const main1TagSection1A3 = document.createElement('a')
 main1TagSection1A3.href = '#'
 main1TagSection1A3.textContent = 'An intelligence quotient (IQ) is a total score derived from a set of standardised tests or subtests designed to assess human intelligence. The abbreviation "IQ" was coined by the psychologist William Stern for the German term Intelligenzquotient, his term for a scoring method for intelligence tests at University of Breslau he advocated in a 1912 book.'
 main1TagSection1.append(main1TagSection1A3)
+const readMore = document.createElement('a')
+readMore.id = 'readMore'
+readMore.href = 'https://en.wikipedia.org/wiki/Intelligence_quotient'
+readMore.textContent='Read More...'
+main1TagSection1.append(readMore)
 //forth a 
 const main1TagSection1A4 = document.createElement('a')
 main1TagSection1A4.href = './start/fixed start/start.html'
