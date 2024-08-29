@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background-image: linear-gradient(white, rgb(255, 246, 255), white);
 }
 html,
 body {
