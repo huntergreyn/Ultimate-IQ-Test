@@ -69,7 +69,7 @@ const containerTagDivThirdDiv = document.createElement("div");
 containerTagDivThirdDiv.classList.add("startBtn");
 containerTagDiv.append(containerTagDivThirdDiv);
 const containerTagDivThirdDivA = document.createElement("a");
-containerTagDivThirdDivA.href = "./testPage/test.html";
+containerTagDivThirdDivA.href = "./testPage/testPages.html";
 containerTagDivThirdDivA.id = "startBtnA";
 containerTagDivThirdDivA.textContent = "START";
 containerTagDivThirdDiv.append(containerTagDivThirdDivA);
