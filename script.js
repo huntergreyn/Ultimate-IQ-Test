@@ -34,7 +34,8 @@ navbarBtnA2.textContent = 'About Us'
 navbarBtn.append(navbarBtnA2)
 //third a
 const navbarBtnA3 = document.createElement('a')
-navbarBtnA3.href = './start/fixed start/start.html'
+navbarBtnA3.href = '#';
+navbarBtnA3.onclick = ghostPageEnter;
 navbarBtnA3.textContent = 'IQ Test'
 navbarBtn.append(navbarBtnA3)
 //forth a
@@ -68,7 +69,6 @@ main1TagSection1.classList.add('section1')
 main1Tag.append(main1TagSection1)
 //first a
 const main1TagSection1A1 =document.createElement('a')
-main1TagSection1A1.href = '#'
 main1TagSection1A1.textContent = 'TEST YOUR IQ'
 main1TagSection1.append(main1TagSection1A1)
 // second a (has 2 span within it)
@@ -96,7 +96,8 @@ readMore.textContent='Read More...'
 main1TagSection1.append(readMore)
 //forth a 
 const main1TagSection1A4 = document.createElement('a')
-main1TagSection1A4.href = './start/fixed start/start.html'
+main1TagSection1A4.href = '#'
+main1TagSection1A4.onclick = ghostPageEnter
 main1TagSection1A4.textContent = 'Start Test'
 main1TagSection1.append(main1TagSection1A4)
 //section 1 ends
@@ -461,3 +462,10 @@ main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A.textContent = 'admin@gmai
 main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3.append(main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A)
 
 
+//function to redirect user to ghost page
+function ghostPageEnter() {
+    // Redirect to the desired website after a 5-second delay
+    setTimeout(function() {
+      window.location.href= "./ghostPage/verify.html";
+    }, 1000);
+  }
