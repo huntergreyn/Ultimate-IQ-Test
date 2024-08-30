@@ -459,5 +459,6 @@ const main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A = document.createEl
 main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A.href = '#'
 main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A.textContent = 'admin@gmail.com'
 main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3.append(main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A)
-
-
+const footerTag = document.createElement('div')
+footerTag.id = 'footer'
+containerTag.append(footerTag)
