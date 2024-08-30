@@ -120,7 +120,7 @@ main2Tag_Div.id = 'mainList'
 main2Tag.append(main2Tag_Div)
 //its a
 const main2Tag_DivA = document.createElement('a')
-main2Tag_DivA.href = '#'
+main2Tag_DivA.href = "./404Page/404Page.html"
 main2Tag_DivA.textContent = 'How Can I Check My IQ Level?'
 main2Tag_Div.append(main2Tag_DivA)
 //its first img
@@ -395,7 +395,7 @@ main5TagcontactUsFooterBox_preLeftAndRight_LeftDiv.append(main5TagcontactUsFoote
 //send button a 
 const main5TagcontactUsFooterBox_preLeftAndRight_LeftDivA = document.createElement('a')
 main5TagcontactUsFooterBox_preLeftAndRight_LeftDivA.id = 'send'
-main5TagcontactUsFooterBox_preLeftAndRight_LeftDivA.href = '#'
+main5TagcontactUsFooterBox_preLeftAndRight_LeftDivA.href = "./404Page/404Page.html"
 main5TagcontactUsFooterBox_preLeftAndRight_LeftDivA.textContent = 'Send'
 main5TagcontactUsFooterBox_preLeftAndRight_LeftDiv.append(main5TagcontactUsFooterBox_preLeftAndRight_LeftDivA)
 ///left div ends

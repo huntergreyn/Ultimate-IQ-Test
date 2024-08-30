@@ -1,0 +1,45 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #0c0c0d;
+}
+main {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+}
+
+#mainImg {
+    width: 940px;
+}
+.both {
+    height: 820px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#btnDiv {
+    /* background-color: green; */
+    width: 210px;
+    height: 44.4px;
+    position: absolute;
+    top: 67.9%;
+    left: 39.6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#backBtn {
+    width: 209px;
+    height: 44px;
+}
+
+
