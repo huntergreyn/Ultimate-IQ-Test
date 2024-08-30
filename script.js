@@ -59,7 +59,7 @@ navbarSearch.append(navbarSearchInput)
 //navbar finished
 //main1 begins
 const main1Tag = document.createElement('div')
-main1Tag.classList.add('main1')
+main1Tag.id ='main1'
 containerTag.append(main1Tag)
 //main1 has 2 Section.. fist one for start iq test and second one is for iq test img
 //section 1 (has a*4)
