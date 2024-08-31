@@ -17,7 +17,7 @@ body {
   margin: 10% auto;
   background: #dbbff2af;
   height: 600px;
-  width: 1000px;
+  width: 1099px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -100,6 +100,7 @@ body {
   margin-top: 20px;
 }
 .answerImages {
+  display: flex;
   margin-top: 32px;
   flex-wrap: nowrap;
 }
