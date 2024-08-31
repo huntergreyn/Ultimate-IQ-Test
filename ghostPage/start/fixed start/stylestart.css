@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  
 }
 .container {
   width: 100%;
@@ -12,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0;
+ 
 }
 input {
   display: block;
@@ -27,6 +29,7 @@ input {
 input::placeholder {
   color: #916CB6;
   font-size: 20px;
+  font-family: JetBrainsMono;
 }
 #startTestBtn {
   background-color: #916CB6;
@@ -39,19 +42,24 @@ input::placeholder {
   display: block;
   border-radius: 12px;
   font-size: 18px;
-  font-family: monospace;
   box-shadow: 0px 10px 10px 0px #BCAEEB;
+  font-family: JetBrainsMono;
 }
 
 div > p {
   color: #593E73;
- font-family:  monospace;
 }
 #welcome {
   font-size: 30px;
+  font-family: JetBrainsMono;
+}
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(docs/JetBrainsMono/JetBrainsMono-Medium.ttf);
 }
 #text {
   font-size: 18px;
+  font-family: JetBrainsMono;
 }
 #mainLeft {
   width: 743px;
@@ -92,14 +100,14 @@ margin-left: 25px;
 li {
   color: white;
   list-style-type: none;
-  font-family: monospace;
   margin-top: 20px;
   font-size: 16px;
+  font-family: JetBrainsMono;
 }
 #startBtn {
   background-color: white;
   color:#593E73;
- 
+  font-family: JetBrainsMono;
   padding-left: 8px;
   padding-right: 40px;
   padding-top: 30px;
@@ -107,7 +115,6 @@ li {
   text-align: center;
   border-radius: 17px;
   font-size: 18px;
-  font-family: monospace;
   z-index: 1;
 width: 100px;
 position: absolute;
