@@ -46,27 +46,39 @@ nav {
   width: 45%;
   margin-right: 60px;
 }
+.navbarBtnDiv1 , .navbarBtnDiv2 , .navbarBtnDiv3 , .navbarBtnDiv4 {
+  position: relative;
+}
 /* labels begins*/
 .navLabeClasses {
-  background-color: #681996;
-  width: 15px;
+  background-color: #540d7e;
+  width: 45px;
   height: 3px;
-  bottom: -1px;
+  bottom: -25px;
   position: absolute;
 }
 #navLabel1Id{
-  left: 150px;
+  left: 37px;
+  /* opacity: 0; */
 }
 #navLabel2Id{
-  left: 40px;
+  left: 45px;
+  /* opacity: 0; */
 }
 #navLabel3Id{
-  left: 30px;
+  left: 38px;
+  /* opacity: 0; */
 }
 #navLabel4Id{
-  left: 20px;
+  left: 53px;
+  /* opacity: 0; */
 }
 /* label ends */
+/* #navbarBtnA1 , #navbarBtnA2 , #navbarBtnA3 , #navbarBtnA4 {
+
+} */
+
+
 .navBtn a:hover {
   color: #681996;
   transition-duration: 0.5s;
