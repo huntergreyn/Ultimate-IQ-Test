@@ -113,9 +113,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   #result > p {
-    max-width: 300px;
-   
-
+    max-width: 350px;
   }
   #result > p:first-of-type {
     font-size: 18px;
@@ -124,7 +122,7 @@ body {
     ;
   }
   #result > p:last-of-type {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 45px;
     color: #916CB6;
   }
@@ -141,4 +139,5 @@ body {
     position: absolute;
     top: 30%;
     left: 30px;
+    height: 180px;
   }
