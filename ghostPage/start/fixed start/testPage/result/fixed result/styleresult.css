@@ -25,6 +25,7 @@ body {
     border-radius: 12px;
     font-size: 18px;
     font-family: monospace;
+    box-shadow: 0px 10px 10px 0px #BCAEEB;
   }
   
   div > p {
