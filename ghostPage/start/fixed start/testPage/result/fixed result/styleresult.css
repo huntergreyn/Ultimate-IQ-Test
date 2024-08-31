@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
   }
+  @font-face {
+    font-family: JetBrainsMono;
+    src: url(docs/JetBrainsMono/JetBrainsMono-Medium.ttf);
+  }
   .container {
     width: 100%;
   }
@@ -24,19 +28,21 @@ body {
     display: block;
     border-radius: 12px;
     font-size: 18px;
-    font-family: monospace;
+    font-family: JetBrainsMono;
     box-shadow: 0px 10px 10px 0px #BCAEEB;
   }
   
   div > p {
     color: #593E73;
-   font-family:  monospace;
+    
   }
   #welcome {
     font-size: 30px;
+    font-family: JetBrainsMono;
   }
   #text {
     font-size: 18px;
+    font-family: JetBrainsMono;
   }
   #mainLeft {
     width: 743px;
@@ -85,7 +91,7 @@ body {
   li {
     color: white;
     list-style-type: none;
-    font-family: monospace;
+    font-family: JetBrainsMono;
     margin-top: 20px;
     margin-right: 35px;
     font-size: 16px;
@@ -100,7 +106,7 @@ body {
     text-align: center;
     border-radius: 17px;
     font-size: 18px;
-    font-family: monospace;
+    font-family: JetBrainsMono;
     z-index: 1;
   width: 100px;
   position: absolute;
@@ -111,10 +117,14 @@ body {
   #IQ {
     font-size: 30px;
     margin-left: 45px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Domine;
+  }
+  @font-face {
+    font-family: Domine;
+    src: url(docs/Domine/Domine-Regular.ttf);
   }
   #result > p {
-    max-width: 350px;
+    max-width: 330px;
   }
   #result > p:first-of-type {
     font-size: 18px;
@@ -124,8 +134,14 @@ body {
   }
   #result > p:last-of-type {
     font-size: 16px;
+
     margin-left: 45px;
     color: #916CB6;
+    font-family:AnekMalayalam
+  }
+  @font-face {
+    font-family:AnekMalayalam ;
+    src: url(docs/AnekMalayalam/AnekMalayalam-VariableFont_wdth\,wght.ttf);
   }
   #resultBox {
     border: 3px solid #BCAEEB82;
@@ -138,7 +154,7 @@ body {
   #line {
     display: inline;
     position: absolute;
-    top: 30%;
+    top: 27%;
     left: 30px;
-    height: 180px;
+    height: 190px;
   }
