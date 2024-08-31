@@ -71,7 +71,7 @@ function ImageClickFunction(meownigggga) {
             loadingDiv.style = 'opacity:0.4 ; display:flex'
             
             setTimeout(() => {
-                loadingDiv.style = 'opacity:1'
+                loadingDiv.style = 'opacity:1 ; display:flex'
                 // window.location.href = './result/fixed result/result.html';
             }, 100);
             // window.location.href = './result/fixed result/result.html';
