@@ -2,7 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   height: 100vh;
-  position: relative;
+  
 }
 #container {
   display: flex;
@@ -11,12 +11,12 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
-.main {
-  margin: 10% auto;
-  background: #dbbff2af;
+.mainTop {
+  background: linear-gradient(180deg, #9D73BF 0%, #8863A5 46.98%, #593E73 100%);
   height: 600px;
-  width: 1000px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -94,21 +94,26 @@ body {
   font-weight: 700;
 }
 /* //// */
-.mainTop {
-  height: 465px;
-  margin-top: 0;
-}
+
 .answerImages {
-  margin-top: 32px;
   flex-wrap: nowrap;
 align-items: end;
 margin-bottom: 100px;
-background-color: white;
 }
+#container {
+  position: relative;
+}
+.mainBottom {
+ position: absolute;
+ bottom: 0;
+  width: 100%;
+  display: flex;
+ justify-content: center;
 
+}
 .mainBottom img {
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .mainTestImg {
   width: 100%;
