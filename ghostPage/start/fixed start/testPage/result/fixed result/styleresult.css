@@ -132,7 +132,7 @@ body {
     font-size: 18px;
     margin-left: 20px;
     color:  #916CB6;
-    ;
+    font-family: monospace;
   }
   #result > p:last-of-type {
     font-size: 16px;
