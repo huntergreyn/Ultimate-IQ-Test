@@ -1,86 +1,89 @@
-/*'use strict'
-///result page js starts
-const containerTag = document.createElement('div')
-containerTag.classList.add('container')
-document.body.append(containerTag)
-//containerTag has 3 divs in it
-//containerTagFirstDiv
-const containerTagFirstDiv = document.createElement('div')
-containerTagFirstDiv.id = 'person'
-containerTag.append(containerTagFirstDiv)
-//img
-const containerTagFirstDivImg = document.createElement('img')
-containerTagFirstDivImg.src = './docs/Person.png'
-containerTagFirstDiv.append(containerTagFirstDivImg)
-//containerTagFirstDiv Ends
-//containerTagSecondDiv Begins
-const containerTagSecondDiv = document.createElement('div')
-containerTagSecondDiv.classList.add('startContainer')
-containerTag.append(containerTagSecondDiv)
-// containerTagSecondDiv has a div inside it
-const containerTagSecondDiv_Div = document.createElement('div')
-containerTagSecondDiv_Div.classList.add('startMainDiv')
+'use strict'
+const containerTag = document.createElement("div");
+containerTag.classList.add("container");
+document.body.append(containerTag);
+const mainDiv = document.createElement('div');
+mainDiv.id = ('main');
+containerTag.append(mainDiv);
+const mainRightDiv = document.createElement('div');
+mainRightDiv.id = ('mainRight');
+mainDiv.append(mainRightDiv);
+const rigthBackground = document.createElement('div');
+rigthBackground.id = ('rightBackground');
+mainRightDiv.append(rigthBackground);
+const iconImg = document.createElement('img');
+iconImg.id = ('iconImg')
+iconImg.src = 'docs/Frame 2 (1).png';
+rigthBackground.append(iconImg);
+const pWellDone = document.createElement('p');
+pWellDone.id = ('wellDone');
+pWellDone.textContent = 'WELL DONE!';
+rigthBackground.append(pWellDone);
+const pText = document.createElement('p');
+pText.id = ('text');
+pText.textContent = 'Thanks For Visiting Our Site.';
+rigthBackground.append(pText);
+const boxDiv = document.createElement('div');
+boxDiv.id = ('box')
+rigthBackground.append(boxDiv);
+const resultBox = document.createElement('div')
+resultBox.id = 'resultBox'
+boxDiv.append(resultBox)
+const result = document.createElement('div')
+result.id = 'result'
+resultBox.append(result)
+const lineImg = document.createElement('img')
+lineImg.id = 'line'
+lineImg.setAttribute("src" , 'docs/Line 1.png')
+result.append(lineImg)
+const testResult = document.createElement('p')
+testResult.textContent = 'Test Result'
+result.append(testResult)
+const iq = document.createElement('p')
+iq.textContent = 'IQ 120'
+iq.id='IQ'
+result.append(iq)
+const iqDescription = document.createElement('p')
+iqDescription.textContent = 'Thank you for taking the IQ test! Your score suggests average intelligence. While this might not be what you expected, remember that IQ tests only measure certain skills.Everyone has unique strengths,but remember you are Dumb!You Alone Are The Monkey One' 
+result.append(iqDescription)
+// personIconImg.src = "docs/image.png2.png";
+const startAgainBtn = document.createElement('a');
+startAgainBtn.id = ('startAgainBtn');
+startAgainBtn.href = "./testPage/testPages.html";
+startAgainBtn.textContent = "Start Again";
+boxDiv.append(startAgainBtn);
+const mainLeftDiv = document.createElement('div');
+mainLeftDiv.id = ('mainLeft');
+mainDiv.append(mainLeftDiv);
+const itemsDiv = document.createElement('div');
+itemsDiv.id = ('items');
+mainLeftDiv.append(itemsDiv);
+const menuImg = document.createElement('img');
+menuImg.id = ('menuImg')
+menuImg.src = 'docs/Bulleted List.png';
+itemsDiv.append(menuImg);
+const menuUl = document.createElement('ul');
+itemsDiv.append(menuUl);
+const li1 = document.createElement('li');
+menuUl.append(li1);
+const liA1 = document.createElement('a')
+liA1.href = '#'
+liA1.textContent = 'Home';
+li1.append(liA1)
+const li2 = document.createElement('li');
+menuUl.append(li2);
+const liA2 = document.createElement('a')
+liA2.href = '#'
+liA2.textContent = 'About Us';
+li2.append(liA2)
+const li3 = document.createElement('li');
 
-containerTagSecondDiv.append(
-    containerTagSecondDiv_Div)
-// containerTagSecondDiv_Div have 2 divs inside it for the actual result
-//leftDiv
-const containerTagSecondDiv_DivFirstDiv = document.createElement('div')
-containerTagSecondDiv_DivFirstDiv.id = 'leftDiv'
-containerTagSecondDiv_Div.append(containerTagSecondDiv_DivFirstDiv)
-// left div has an image inside it
-const containerTagSecondDiv_DivFirstDivImg = document.createElement('img')
-containerTagSecondDiv_DivFirstDivImg.id = 'leftDivImg'
-containerTagSecondDiv_DivFirstDivImg.src = './docs/Pass Fail.png'
-containerTagSecondDiv_DivFirstDiv.append(containerTagSecondDiv_DivFirstDivImg)
-//leftDiv Done
-//rightDiv begins
-const containerTagSecondDiv_DivSecondDiv = document.createElement('div')  
-containerTagSecondDiv_DivSecondDiv.id = 'rightDiv'
-containerTagSecondDiv_Div.append(containerTagSecondDiv_DivSecondDiv)
-//rightDiv has p*3 within it
-//First p tag
-const containerTagSecondDiv_DivSecondDivP1 = document.createElement('p')
-containerTagSecondDiv_DivSecondDivP1.id = 'topP'
-containerTagSecondDiv_DivSecondDivP1.textContent = 'TEST RESULT'
-containerTagSecondDiv_DivSecondDiv.append(containerTagSecondDiv_DivSecondDivP1)
-//Second p tag
-const containerTagSecondDiv_DivSecondDivP2 = document.createElement('p')
-containerTagSecondDiv_DivSecondDivP2.id = 'midP'
-containerTagSecondDiv_DivSecondDiv.append(containerTagSecondDiv_DivSecondDivP2)
-//mid p IQQQ
-const IQDiv = document.createElement('div')
-IQDiv.id = 'iqDiv'
-containerTagSecondDiv_DivSecondDivP2.append(IQDiv)
-
-///
-// Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the iqScore from local storage
-    const iqScore = localStorage.getItem('iqScore'); // Retrieve the number
-
-    // Display the IQ score in a <p> tag
-    document.getElementById('iqScoreDisplay').innerHTML = `IQ Score: <span>${iqScore}</span>`;
-});
-///
-
-const IQ = document.createElement('a');
-IQ.id = 'iqScoreDisplay'
-IQDiv.append(IQ)
-//Third p tag
-const containerTagSecondDiv_DivSecondDivP3 = document.createElement('p')
-containerTagSecondDiv_DivSecondDivP3.id = 'botP'
-containerTagSecondDiv_DivSecondDivP3.textContent = "Thank you for taking the IQ test! Your score suggests average intelligence. While this might not be what you expected, remember that IQ tests only measure certain skills.Everyone has unique strengths,but remember you are Dumb!..'You Alone Are The Monkey One'"
-containerTagSecondDiv_DivSecondDiv.append(containerTagSecondDiv_DivSecondDivP3)
-//rightDiv Ends
-// third div (insdie container) begins
-const containerTagThirdDiv = document.createElement('div')
-containerTagThirdDiv.classList.add('startBtn')
-containerTag.append(containerTagThirdDiv)
-//has a*1 ta within it
-const containerTagThirdDivA = document.createElement('a')
-containerTagThirdDivA.href = 'https://alirezanoshad.github.io/IQ-quiz/'
-containerTagThirdDivA.id = 'startBtnA'
-containerTagThirdDivA.textContent = 'START AGAIN'
-containerTagThirdDiv.append(containerTagThirdDivA)*/
-
+menuUl.append(li3);
+const liA3 = document.createElement('a')
+liA3.href = '#'
+liA3.textContent = 'Contact US';
+li3.append(liA3)
+const startBtn = document.createElement('div');
+startBtn.id = ('resultBtn');
+startBtn.textContent = 'Result'
+itemsDiv.append(startBtn);

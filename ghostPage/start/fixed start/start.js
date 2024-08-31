@@ -1,75 +1,91 @@
-/*"use strict";
-//containerTag
+"use strict";
 const containerTag = document.createElement("div");
 containerTag.classList.add("container");
 document.body.append(containerTag);
-const containerTagDiv = document.createElement("div");
-containerTagDiv.classList.add("prestartContainer");
-containerTag.append(containerTagDiv);
-//containerTagDivFirstDiv
-const containerTagDivFirstDiv = document.createElement("div");
-containerTagDivFirstDiv.id = "person";
-containerTagDiv.append(containerTagDivFirstDiv);
-//person icon on top
-const containerTagDivFirstDivImg = document.createElement("img");
-containerTagDivFirstDivImg.src = "./docs/Person.png";
-containerTagDivFirstDiv.append(containerTagDivFirstDivImg);
-//containerTagDivFirstDiv ended
-// containerTagDivSecondDiv
-const containerTagDivSecondDiv = document.createElement("div");
-containerTagDivSecondDiv.classList.add("startContainer");
-containerTagDiv.append(containerTagDivSecondDiv);
-//the main box
-const containerTagDivSecondDiv_Div = document.createElement("div");
-containerTagDivSecondDiv_Div.classList.add("startMainDiv");
-containerTagDivSecondDiv.append(containerTagDivSecondDiv_Div);
-//containerTagDivSecondDiv_Div has div*2 in it and for each, we have img and input
-const containerTagDivSecondDiv_Div_FirstDiv = document.createElement("div");
-containerTagDivSecondDiv_Div_FirstDiv.id = "name";
-containerTagDivSecondDiv_Div.append(containerTagDivSecondDiv_Div_FirstDiv);
-//containerTagDivSecondDiv_Div img
-const containerTagDivSecondDiv_Div_FirstDivImg = document.createElement("img");
-containerTagDivSecondDiv_Div_FirstDivImg.src = "./docs/Person.png";
-containerTagDivSecondDiv_Div_FirstDivImg.id = "nameImg";
-containerTagDivSecondDiv_Div_FirstDiv.append(
-  containerTagDivSecondDiv_Div_FirstDivImg
-);
-// containerTagDivSecondDiv_Div input
-const containerTagDivSecondDiv_Div_FirstDivInput =
-  document.createElement("input");
-containerTagDivSecondDiv_Div_FirstDivInput.id = "nameInput";
-containerTagDivSecondDiv_Div_FirstDivInput.placeholder = "  Name";
-containerTagDivSecondDiv_Div_FirstDivInput.type = "text";
-containerTagDivSecondDiv_Div_FirstDiv.append(
-  containerTagDivSecondDiv_Div_FirstDivInput
-);
-//containerTagDivSecondDiv_Div_secondDiv also has div*2 in it and for each, we have img and input
-const containerTagDivSecondDiv_Div_secondDiv = document.createElement("div");
-containerTagDivSecondDiv_Div_secondDiv.id = "age";
-containerTagDivSecondDiv_Div.append(containerTagDivSecondDiv_Div_secondDiv);
-//containerTagDivSecondDiv_Div_secondDiv img
-const containerTagDivSecondDiv_Div_secondDivImg = document.createElement("img");
-containerTagDivSecondDiv_Div_secondDivImg.id = "ageImg";
-containerTagDivSecondDiv_Div_secondDivImg.src = "docs/Compare Heights.png";
-containerTagDivSecondDiv_Div_secondDiv.append(
-  containerTagDivSecondDiv_Div_secondDivImg
-);
-//containerTagDivSecondDiv_Div_secondDiv input
-const containerTagDivSecondDiv_Div_secondDivInput =
-  document.createElement("input");
-containerTagDivSecondDiv_Div_secondDivInput.id = "ageInput";
-containerTagDivSecondDiv_Div_secondDivInput.placeholder = "  Age";
-containerTagDivSecondDiv_Div_secondDivInput.type = "text";
-containerTagDivSecondDiv_Div_secondDiv.append(
-  containerTagDivSecondDiv_Div_secondDivInput
-);
-// containerTagDivSecondDiv_Div_secondDiv ends
-// containerTagDivThirdDiv ends
-const containerTagDivThirdDiv = document.createElement("div");
-containerTagDivThirdDiv.classList.add("startBtn");
-containerTagDiv.append(containerTagDivThirdDiv);
-const containerTagDivThirdDivA = document.createElement("a");
-containerTagDivThirdDivA.href = "./testPage/testPages.html";
-containerTagDivThirdDivA.id = "startBtnA";
-containerTagDivThirdDivA.textContent = "START";
-containerTagDivThirdDiv.append(containerTagDivThirdDivA);*/
+const mainDiv = document.createElement("div");
+mainDiv.id = "main";
+containerTag.append(mainDiv);
+const mainLeftDiv = document.createElement("div");
+mainLeftDiv.id = "mainLeft";
+mainDiv.append(mainLeftDiv);
+const itemsDiv = document.createElement("div");
+itemsDiv.id = "items";
+mainLeftDiv.append(itemsDiv);
+const menuImg = document.createElement("img");
+menuImg.id = "menuImg";
+menuImg.src = "docs/Bulleted List.png";
+itemsDiv.append(menuImg);
+const menuUl = document.createElement("ul");
+itemsDiv.append(menuUl);
+const li1 = document.createElement("li");
+menuUl.append(li1);
+const liA1 = document.createElement("a");
+liA1.href = "#";
+liA1.textContent = "Home";
+li1.append(liA1);
+const li2 = document.createElement("li");
+menuUl.append(li2);
+const liA2 = document.createElement("a");
+liA2.href = "#";
+liA2.textContent = "About Us";
+li2.append(liA2);
+const li3 = document.createElement("li");
+menuUl.append(li3);
+const liA3 = document.createElement("a");
+liA3.href = "#";
+liA3.textContent = "Contact Us";
+li3.append(liA3);
+const startBtn = document.createElement("div");
+startBtn.id = "startBtn";
+startBtn.textContent = "Start";
+itemsDiv.append(startBtn);
+const mainRightDiv = document.createElement("div");
+mainRightDiv.id = "mainRight";
+mainDiv.append(mainRightDiv);
+const rigthBackground = document.createElement("div");
+rigthBackground.id = "rightBackground";
+mainRightDiv.append(rigthBackground);
+const iconImg = document.createElement("img");
+iconImg.id = "iconImg";
+iconImg.src = "docs/Frame 2 (1).png";
+rigthBackground.append(iconImg);
+const pWelcome = document.createElement("p");
+pWelcome.id = "welcome";
+pWelcome.textContent = "WELCOME!";
+rigthBackground.append(pWelcome);
+const pText = document.createElement("p");
+pText.id = "text";
+pText.textContent = "Please Enter Your Information";
+rigthBackground.append(pText);
+const boxDiv = document.createElement("div");
+boxDiv.id = "box";
+rigthBackground.append(boxDiv);
+const input1Div = document.createElement("div");
+input1Div.id = "input1";
+boxDiv.append(input1Div);
+const personIconImg = document.createElement("img");
+personIconImg.id = "personIconImg";
+
+// personIconImg.src = "docs/image.png2.png";
+input1Div.append(personIconImg);
+personIconImg.src = "docs/image.png2.png";
+input1Div.append(personIconImg);
+const input1 = document.createElement("input");
+input1.placeholder = "Name";
+input1.type = "text";
+input1Div.append(input1);
+const input22Div = document.createElement("div");
+input22Div.id = "input2";
+boxDiv.append(input22Div);
+const input2 = document.createElement("input");
+input2.id = "age";
+input2.placeholder = "Age";
+input2.type = "text";
+input22Div.append(input2);
+const startTestBtn = document.createElement("a");
+startTestBtn.id = "startTestBtn";
+startTestBtn.href = "./testPage/testPages.html";
+startTestBtn.textContent = "Start Test";
+boxDiv.append(startTestBtn);
+
+console.log(containerTag);
