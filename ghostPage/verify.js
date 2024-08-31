@@ -37,35 +37,23 @@ function verifyFunction() {
     setTimeout(() => {
             animatedIcon.style = 'opacity:1 ; z-index:3'
             lastAlert.style = 'opacity:1'
-    }, 1000);
+    }, 500);
     // lastalert appears..
     setTimeout(() => {
             animatedIcon.style = 'opacity:0 ; z-index:0'
             lastAlert.style = 'opacity:1'
     }, 10000);
     setTimeout(() => {
-        afterCheckBox.style = 'opacity:1 ; z-index:3'
+        afterCheckBox.style = 'opacity:2 ; z-index:3'
         lastAlert.style = 'opacity:0'
 }, 11000);
 //
 setTimeout(() => {
-    afterCheckBox.style = 'opacity:0.2 ; z-index:3'
+    afterCheckBox.style = 'opacity:0.8 ; z-index:3'
 }, 12500);
-setTimeout(() => {
-    afterCheckBox.style = 'opacity:0.8 ; z-index:3'
-}, 14000);
-setTimeout(() => {
-    afterCheckBox.style = 'opacity:0.2 ; z-index:3'
-}, 15500);
-setTimeout(() => {
-    afterCheckBox.style = 'opacity:0.8 ; z-index:3'
-}, 17000);
-setTimeout(() => {
-    afterCheckBox.style = 'opacity:0.2 ; z-index:3'
-}, 18500);
 setTimeout(() => {
     afterCheckBox.style = 'opacity:1 ; z-index:3'
     window.location.href = "./start/fixed start/start.html"
-}, 20000);
+}, 14000);
 //after the verification process go to the testpages
 }
