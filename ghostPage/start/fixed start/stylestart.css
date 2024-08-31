@@ -64,7 +64,9 @@ div > p {
 #mainLeft {
   width: 743px;
   height: 100vh;
-  background: #9D73BF;
+  background-image: url(docs/image\ 2\ \(2\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
   position: relative;
 }
