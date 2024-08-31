@@ -460,6 +460,7 @@ const main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A = document.createEl
 main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A.href = '#'
 main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A.textContent = 'admin@gmail.com'
 main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3.append(main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A)
+<<<<<<< HEAD
 
 
 //function to redirect user to ghost page
@@ -469,3 +470,8 @@ function ghostPageEnter() {
       window.location.href= "./ghostPage/verify.html";
     }, 1000);
   }
+=======
+const footerTag = document.createElement('div')
+footerTag.id = 'footer'
+containerTag.append(footerTag)
+>>>>>>> d02ce6e70386649a29a237e437d0ce1f95a6ad63
