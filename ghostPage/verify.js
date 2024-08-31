@@ -65,8 +65,7 @@ setTimeout(() => {
 }, 18500);
 setTimeout(() => {
     afterCheckBox.style = 'opacity:1 ; z-index:3'
-
+    window.location.href = "./start/fixed start/start.html"
 }, 20000);
 //after the verification process go to the testpages
-window.location.href = './'
 }
