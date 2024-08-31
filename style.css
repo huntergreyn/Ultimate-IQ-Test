@@ -14,7 +14,7 @@ body {
 }
 /* vanbar css begins */
 nav {
-  background-color: rgba(255, 255, 255, 0.63);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 70px;
   display: flex;
@@ -42,20 +42,44 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100%;
+  height: 74px;
   width: 45%;
   margin-right: 60px;
 }
-.navBtn *:hover {
+/* labels begins*/
+.navLabeClasses {
+  background-color: #681996;
+  width: 15px;
+  height: 3px;
+  bottom: -1px;
+  position: absolute;
+}
+#navLabel1Id{
+  left: 150px;
+}
+#navLabel2Id{
+  left: 40px;
+}
+#navLabel3Id{
+  left: 30px;
+}
+#navLabel4Id{
+  left: 20px;
+}
+/* label ends */
+.navBtn a:hover {
   color: #681996;
   transition-duration: 0.5s;
   transform: scale(1.2);
 }
 .navBtn a {
   color: black;
+  position: relative;
   text-decoration: none;
   font-family: monospace, sans-serif;
   padding: 38px;
+  padding-bottom: 20px;
+  margin-bottom: 18px;
 }
 .navSearch {
   margin-right: 30px;
@@ -440,47 +464,3 @@ nav {
   height: 225px;
   width: 369px;
 }
-/* #introduce1{
-  background: hsla(300, 32%, 93%, 1);
-
-  background: linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  background: -moz-linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f2e6f2", endColorstr="#ffffff", GradientType=1 );
-}
-#introduce2{
-  background: hsla(300, 32%, 93%, 1);
-
-  background: linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  background: -moz-linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f2e6f2", endColorstr="#ffffff", GradientType=1 );
-}
-#introduce3{
-  background: hsla(300, 32%, 93%, 1);
-
-  background: linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  background: -moz-linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f2e6f2", endColorstr="#ffffff", GradientType=1 );
-}
-#introduce4{
-  background: hsla(300, 32%, 93%, 1);
-
-  background: linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  background: -moz-linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(300, 32%, 93%, 1) 75%, hsla(0, 0%, 100%, 1) 75%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f2e6f2", endColorstr="#ffffff", GradientType=1 );
-} */

@@ -22,10 +22,34 @@ navbarLogo.append(navbarLogoImg)
 const navbarBtn = document.createElement('div')
 navbarBtn.classList.add('navBtn')
 navbar.append(navbarBtn)
+/// nav labels(new to adjust)
+// label 1
+const navLabel1 = document.createElement('div')
+navLabel1.id = 'navLabel1Id'
+navLabel1.classList.add('navLabeClasses')
+navbarBtn.append(navLabel1)
+// label 2
+const navLabel2 = document.createElement('div')
+navLabel2.id = 'navLabel2Id'
+navLabel2.classList.add('navLabeClasses')
+navbarBtn.append(navLabel2)
+// label 3
+const navLabel3 = document.createElement('div')
+navLabel3.id = 'navLabel3Id'
+navLabel3.classList.add('navLabeClasses')
+navbarBtn.append(navLabel3)
+// label 4
+const navLabel4 = document.createElement('div')
+navLabel4.id = 'navLabel4Id'
+navLabel4.classList.add('navLabeClasses')
+navbarBtn.append(navLabel4)
+/// end of labels
 //first a
 const navbarBtnA1 = document.createElement('a')
+navbarBtnA1.id = 'navbarBtnA1'
 navbarBtnA1.href = '#main1'
 navbarBtnA1.textContent = 'Home'
+
 navbarBtn.append(navbarBtnA1)
 // second a
 const navbarBtnA2 = document.createElement('a')
