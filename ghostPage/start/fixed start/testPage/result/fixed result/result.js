@@ -1,4 +1,4 @@
-'use strict'
+/*'use strict'
 ///result page js starts
 const containerTag = document.createElement('div')
 containerTag.classList.add('container')
@@ -82,5 +82,5 @@ const containerTagThirdDivA = document.createElement('a')
 containerTagThirdDivA.href = 'https://alirezanoshad.github.io/IQ-quiz/'
 containerTagThirdDivA.id = 'startBtnA'
 containerTagThirdDivA.textContent = 'START AGAIN'
-containerTagThirdDiv.append(containerTagThirdDivA)
+containerTagThirdDiv.append(containerTagThirdDivA)*/
 
