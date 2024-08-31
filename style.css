@@ -76,10 +76,14 @@ nav {
   color: black;
   position: relative;
   text-decoration: none;
-  font-family: monospace, sans-serif;
+  font-family: BalooBhai2;
   padding: 38px;
   padding-bottom: 20px;
   margin-bottom: 18px;
+}
+@font-face {
+  font-family: BalooBhai2;
+  src: url(docs/BahooBhai2/BalooBhai2-Medium.ttf);
 }
 .navSearch {
   margin-right: 30px;
@@ -122,26 +126,37 @@ nav {
   width: 46%;
 }
 .section1 > a {
+
   display: block;
   text-decoration: none;
   margin-top: 12px;
   margin-left: 60px;
-  font-family: Verdana;
-  max-width: 430px;
+  font-family: AnekMalayalam;
+  max-width: 470px;
   color: #540d7e;
+}
+.section1 > a:first-of-type {
+  margin-top: 150px;
+  font-family: AnekMalayalam;
+  font-weight: 500;
+  font-size: 20px;
+}
+@font-face {
+  font-family: AnekMalayalam;
+  src: url(docs/AnekMalayalam/AnekMalayalam-VariableFont_wdth\,wght.ttf);
 }
 .section1 > a > span:first-of-type {
   color: rgb(224, 205, 0);
   margin-left: 10px;
 }
 .section1 > a > span {
-  font-size: 30px;
-  font-family: Verdana, sans-serif;
-  font-weight: 600;
+  font-size: 40px;
+  font-family: AnekMalayalam;
+  font-weight: 500;
 }
 .section1 > a:last-of-type {
   background-color: rgb(214, 184, 214);
-  width: 140px;
+  width: 160px;
   padding: 10px;
   text-align: center;
   box-shadow: 2px 2px 0 0 rgb(177, 177, 177);
@@ -156,7 +171,7 @@ nav {
 #mainImage {
   width: 600px;
   margin-left: 12%;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 /* section2 */
 .main2 {
@@ -168,6 +183,7 @@ nav {
 #readMore {
  width: max-content;
  padding: 2px;
+ margin-top: 0px;
  border-radius: 5px;
 }
 #readMore:hover {
@@ -182,6 +198,8 @@ nav {
   height: 115px;
   border-radius: 20px;
   font-family: arial;
+  font-weight: 600;
+  margin-top: 110px;
 }
 #listImage1 {
   width: 80px;
@@ -215,10 +233,16 @@ nav {
 #ourTeam span {
   text-decoration: none;
   font-weight: 700;
+  font-family: Alegreya;
+}
+@font-face {
+  font-family: Alegreya;
+  src: url(docs/Alegreya/Alegreya-Black.ttf);
 }
 #ourTeam a {
   text-decoration: none;
   font-weight: 700;
+  font-family: Alegreya;
 }
 #teamText1 {
   color: rgb(224, 205, 0);
@@ -269,12 +293,14 @@ nav {
   font-size: 40px;
   font-family: georgia;
   font-weight: 600;
+  font-family: Alegreya;
 }
 #contact > span:first-of-type {
   color: rgb(113, 45, 128);
 }
 #contact > span:last-of-type {
   color: rgb(224, 205, 0);
+ 
 }
 #contactUs > div > div > input {
   display: block;
@@ -284,6 +310,14 @@ nav {
   border-radius: 10px;
   padding: 10px;
   outline: none;
+  
+}
+input::placeholder {
+  font-family: AnekBangla
+}
+@font-face {
+font-family:  AnekBangla;
+  src: url(docs/AnekBangla/AnekBangla-VariableFont_wdth\,wght.ttf);
 }
 #name {
   width: 200px;
@@ -349,7 +383,11 @@ nav {
 #right > div > a {
   display: block;
   text-decoration: none;
-  color: #540d7e;
+  color:#00000075;
+
+}
+#right > div > p {
+ color: #00000075
 }
 #send {
   background: linear-gradient(270deg, #bd00cb 0%, #540d7e 100%);
@@ -363,12 +401,21 @@ nav {
 }
 #address {
   font-size: 17px;
+  font-family: AnekBangla;
+  font-weight: 600;
+ color:  #0000008F
 }
 #callUs {
   font-size: 17px;
+  font-family: AnekBangla;
+  font-weight: 600;
+  color:  #0000008F
 }
 #help {
   font-size: 17px;
+  font-family: AnekBangla;
+  font-weight: 600;
+  color:  #0000008F
 }
 /* Paryan css for intro */
 /* ///
@@ -412,33 +459,38 @@ nav {
 #introduce > div > div > p {
   position: absolute;
   max-width: 200px;
-  font-family: georgia;
 }
 #introduce > div > div > p:first-of-type {
   font-weight: 600;
   top: 30px;
   left: 19px;
+  font-family: Alegreya;
 }
 #introduce > div > div > p:last-of-type {
   margin-left: 3%;
   left: 12px;
   top: 160px;
+  font-family: AnekMalayalam;
 }
 #desc1 {
   margin-top: 90px;
   margin-left: 7%;
+  font-family: AnekMalayalam;
 }
 #desc2 {
   margin-top: 90px;
   margin-left: 7%;
+  font-family: AnekMalayalam;
 }
 #desc3 {
   margin-top: 90px;
   margin-left: 7%;
+  font-family: AnekMalayalam;
 }
 #desc4 {
   margin-top: 90px;
   margin-left: 7%;
+  font-family: AnekMalayalam;
 }
 
 /* additional bg */
