@@ -4,6 +4,36 @@ const question2 = document.getElementById('whole2');
 const question3 = document.getElementById('whole3');
 const question4 = document.getElementById('whole4');
 const question5 = document.getElementById('whole5');
+const question6 = document.getElementById('whole6');
+const question7 = document.getElementById('whole7');
+const question8 = document.getElementById('whole8');
+const question9 = document.getElementById('whole9');
+const question10 = document.getElementById('whole10');
+const question11 = document.getElementById('whole11');
+const question12 = document.getElementById('whole12');
+const question13 = document.getElementById('whole13');
+const question14 = document.getElementById('whole14');
+const question15 = document.getElementById('whole15');
+const question16 = document.getElementById('whole16');
+const question17 = document.getElementById('whole17');
+const question18 = document.getElementById('whole18');
+const question19 = document.getElementById('whole19');
+const question20 = document.getElementById('whole20');
+const question21 = document.getElementById('whole21');
+const question22 = document.getElementById('whole22');
+const question23 = document.getElementById('whole23');
+const question24 = document.getElementById('whole24');
+const question25 = document.getElementById('whole25');
+const question26 = document.getElementById('whole26');
+const question27 = document.getElementById('whole27');
+const question28 = document.getElementById('whole28');
+const question29 = document.getElementById('whole29');
+const question30 = document.getElementById('whole30');
+
+
+
+
+
 //
 const container = document.getElementsByClassName('container')
 const main = document.querySelector('.main')
@@ -14,7 +44,7 @@ const loadingDiv = document.getElementById('loadingDiv')
 // Array to store values
 let valueArray = [];
 // Array to store Qs
-const questionDisplayConuter = [question1,question2,question3,question4,question5];
+const questionDisplayConuter = [question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16,question17,question18,question19,question20,question21,question22,question23,question24,question25,question26,question27,question28,question29,question30];
 // Q index(used in function)
 let questionDisplayIndex = 0;
 /// funtion for image onclick attributes..

@@ -12,10 +12,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.mainTop {
-  background: linear-gradient(180deg, #9d73bf 0%, #8863a5 46.98%, #593e73 100%);
-  height: 800px;
-  width: 100%;
+.main {
+  margin: 10% auto;
+  background: #dbbff2af;
+  height: 600px;
+  width: 1000px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -97,8 +98,8 @@ body {
   height: 465px;
   margin-top: 0;
 }
-.mainBottom {
-  display: flex;
+.answerImages {
+  margin-top: 32px;
   flex-wrap: nowrap;
 align-items: end;
 margin-bottom: 100px;
@@ -137,6 +138,82 @@ background-color: white;
 #whole5 {
   display: none;
 }
+#whole6 {
+  display: none;
+}
+#whole7 {
+  display: none;
+}
+#whole8 {
+  display: none;
+}
+#whole9 {
+  display: none;
+}
+#whole10 {
+  display: none;
+}
+#whole11 {
+  display: none;
+}
+#whole12 {
+  display: none;
+}
+#whole13 {
+  display: none;
+}
+#whole14 {
+  display: none;
+}
+#whole15 {
+  display: none;
+}
+#whole16 {
+  display: none;
+}
+#whole17 {
+  display: none;
+}
+#whole18 {
+  display: none;
+}
+#whole19 {
+  display: none;
+}
+#whole20 {
+  display: none;
+}
+#whole21 {
+  display: none;
+}
+#whole22 {
+  display: none;
+}
+#whole23 {
+  display: none;
+}
+#whole24 {
+  display: none;
+}
+#whole25 {
+  display: none;
+}
+#whole26 {
+  display: none;
+}
+#whole27 {
+  display: none;
+}
+#whole28 {
+  display: none;
+}
+#whole29 {
+  display: none;
+}
+#whole30 {
+  display: none;
+}
+
 /* laoding page css */
 #loadingDiv {
   display: none;
