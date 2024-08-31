@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  
 }
 .container {
   width: 100%;
@@ -13,26 +12,24 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0;
- 
 }
 input {
   display: block;
   outline: none;
   padding: 5px;
- border: none;
- width: 250px;
- background: none;
- cursor: pointer;
- padding-left: 20px;
- 
+  border: none;
+  width: 250px;
+  background: none;
+  cursor: pointer;
+  padding-left: 20px;
 }
 input::placeholder {
-  color: #916CB6;
+  color: #916cb6;
   font-size: 20px;
   font-family: JetBrainsMono;
 }
 #startTestBtn {
-  background-color: #916CB6;
+  background-color: #916cb6;
   color: white;
   text-align: center;
   padding: 20px;
@@ -42,12 +39,12 @@ input::placeholder {
   display: block;
   border-radius: 12px;
   font-size: 18px;
-  box-shadow: 0px 10px 10px 0px #BCAEEB;
+  box-shadow: 0px 10px 10px 0px #bcaeeb;
   font-family: JetBrainsMono;
 }
 
 div > p {
-  color: #593E73;
+  color: #593e73;
 }
 #welcome {
   font-size: 30px;
@@ -67,24 +64,24 @@ div > p {
   background-image: url(docs/image\ 2\ \(2\).png);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
   position: relative;
 }
 #mainRight {
   width: 1000px;
   height: 100vh;
- float: right;
+  float: right;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 #rightBackground {
   width: 95%;
- height: 95%;
-  background: #C6CFF242;
+  height: 95%;
+  background: #c6cff242;
   display: flex;
- align-items: center;
+  align-items: center;
   flex-direction: column;
   border-radius: 40px;
 }
@@ -94,10 +91,10 @@ div > p {
   margin-top: 20px;
 }
 #menuImg {
-width: 55px;
-height: 49px;
-margin-top: 30px;
-margin-left: 25px;
+  width: 55px;
+  height: 49px;
+  margin-top: 30px;
+  margin-left: 25px;
 }
 li {
   color: white;
@@ -106,9 +103,13 @@ li {
   font-size: 16px;
   font-family: JetBrainsMono;
 }
+li > a {
+  text-decoration: none;
+  color: white;
+}
 #startBtn {
   background-color: white;
-  color:#593E73;
+  color: #593e73;
   font-family: JetBrainsMono;
   padding-left: 8px;
   padding-right: 40px;
@@ -118,28 +119,28 @@ li {
   border-radius: 17px;
   font-size: 18px;
   z-index: 1;
-width: 100px;
-position: absolute;
-right: -35px;
-top: 40%;
-
+  width: 100px;
+  position: absolute;
+  right: -35px;
+  top: 40%;
 }
 input:first-of-type {
- display: inline;
+  display: inline;
 }
 #personIconImg {
   width: 30px;
   height: 30px;
 }
-#input1 , #input2 {
- border: 2px solid #9D73BF;
- margin-top: 20px;
- border-radius: 12px;
- display: flex;
- align-items: center;
- padding: 10px;
+#input1,
+#input2 {
+  border: 2px solid #9d73bf;
+  margin-top: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 #age {
- margin-left: 30px;
+  margin-left: 30px;
 }
