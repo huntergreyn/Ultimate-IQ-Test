@@ -4,6 +4,11 @@ const question2 = document.getElementById('whole2');
 const question3 = document.getElementById('whole3');
 const question4 = document.getElementById('whole4');
 const question5 = document.getElementById('whole5');
+//
+const container = document.getElementsByClassName('container')
+const main = document.querySelector('.main')
+const loadingDiv = document.getElementById('loadingDiv')
+
 
 
 // Array to store values
@@ -60,8 +65,24 @@ function ImageClickFunction(meownigggga) {
         console.log('IQ Score: ', iqScore);
         //send..
         localStorage.setItem('iqScore', iqScore);
-        //// third- go to result page
-        window.location.href = './result/fixed result/result.html';
+        //// third- go to loading page
+        setTimeout(() => {
+            main.style = 'display:none'
+            loadingDiv.style = 'opacity:0.4 ; display:flex'
+            
+            setTimeout(() => {
+                loadingDiv.style = 'opacity:1'
+                // window.location.href = './result/fixed result/result.html';
+            }, 100);
+            // window.location.href = './result/fixed result/result.html';
+        }, 200);
+
+
+
+
+
+        //// forth- go to result page
+
     }
 }
 
