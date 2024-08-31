@@ -68,24 +68,59 @@ function ImageClickFunction(meownigggga) {
         //// third- go to loading page
         setTimeout(() => {
             main.style = 'display:none'
-            loadingDiv.style = 'opacity:0.4 ; display:flex'
+        }, 10);
+        setTimeout(() => {
+
+            loadingDiv.style = 'opacity:0.1 ; display:flex'
             
             setTimeout(() => {
-                loadingDiv.style = 'opacity:1 ; display:flex'
-                // window.location.href = './result/fixed result/result.html';
-            }, 100);
-            // window.location.href = './result/fixed result/result.html';
-        }, 200);
+                loadingDiv.style = 'opacity:0.2 ; display:flex'
 
+                setTimeout(() => {
+                    loadingDiv.style = 'opacity:0.3 ; display:flex'
 
+                    setTimeout(() => {
+                        loadingDiv.style = 'opacity:0.4 ; display:flex'
 
+                        setTimeout(() => {
+                            loadingDiv.style = 'opacity:0.5 ; display:flex'
 
+                            setTimeout(() => {
+                                loadingDiv.style = 'opacity:0.6 ; display:flex'
 
-        //// forth- go to result page
+                                setTimeout(() => {
+                                    loadingDiv.style = 'opacity:0.7 ; display:flex'
+
+                                    setTimeout(() => {
+                                        loadingDiv.style = 'opacity:0.8 ; display:flex'
+
+                                        setTimeout(() => {
+                                            loadingDiv.style = 'opacity:0.9 ; display:flex'
+
+                                            setTimeout(() => {
+                                                loadingDiv.style = 'opacity:1 ; display:flex'
+
+                                                setTimeout(() => {
+                                                loadingDiv.style = 'opacity:1 ; display:flex'
+                                                }, 20000);
+                                            }, 540);
+                                        }, 505);
+                                    }, 360);
+                                }, 320);
+                            }, 270);
+                        }, 220);
+                    }, 170);
+                }, 120);
+            }, 70);
+        }, 20);
+        // forth- go to result page
+        setTimeout(() => {
+            window.location.href = './result/fixed result/result.html';
+        }, 9500);
 
     }
 }
-
+// function ends
 
 
 
