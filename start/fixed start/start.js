@@ -1,4 +1,4 @@
-"use strict";
+/*"use strict";
 //containerTag
 const containerTag = document.createElement("div");
 containerTag.classList.add("container");
@@ -72,4 +72,4 @@ const containerTagDivThirdDivA = document.createElement("a");
 containerTagDivThirdDivA.href = "./testPage/testPages.html";
 containerTagDivThirdDivA.id = "startBtnA";
 containerTagDivThirdDivA.textContent = "START";
-containerTagDivThirdDiv.append(containerTagDivThirdDivA);
+containerTagDivThirdDiv.append(containerTagDivThirdDivA);*/
