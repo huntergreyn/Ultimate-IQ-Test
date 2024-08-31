@@ -49,9 +49,9 @@ const questionDisplayConuter = [question1,question2,question3,question4,question
 let questionDisplayIndex = 0;
 /// funtion for image onclick attributes..
 //
-function ImageClickFunction(meownigggga) {
+function ImageClickFunction(className) {
     // check if selected img is corret on incorrect
-    if (meownigggga === 'trueImg') {
+    if (className === 'trueImg') {
         // if selected img is coorect, add a True string to myValue array(answers)
         valueArray.push('True');
     } else {

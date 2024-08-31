@@ -6,7 +6,7 @@ document.body.append(containerTag);
 const containerTagDiv = document.createElement("div");
 containerTagDiv.classList.add("prestartContainer");
 containerTag.append(containerTagDiv);
-//containerTagDivFirstDi
+//containerTagDivFirstDiv
 const containerTagDivFirstDiv = document.createElement("div");
 containerTagDivFirstDiv.id = "person";
 containerTagDiv.append(containerTagDivFirstDiv);
