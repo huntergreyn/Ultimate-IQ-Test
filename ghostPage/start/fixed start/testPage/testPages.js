@@ -288,7 +288,7 @@ const question30 = document.getElementById('whole30');
 // mainTestImg.classList.add('mainTestImg');
 
 
-
+let counter = document.getElementById('leftDivP1');
 
 
 
@@ -320,6 +320,7 @@ function ImageClickFunction(className) {
     questionDisplayConuter[questionDisplayIndex].style.display = 'none';
     //and +1 the Q index(used for following if)
     questionDisplayIndex++;
+    counter.textContent = questionDisplayIndex + 1;
     // check if there are no  more Q show the next Q
     if (questionDisplayIndex < questionDisplayConuter.length ) {
         //show the next Q
