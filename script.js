@@ -30,7 +30,7 @@ navbarBtn.append(navbarBtnDiv1)
 const navbarBtn1A = document.createElement('a')
 navbarBtn1A.id = 'navbarBtnA1'
 navbarBtn1A.href = '#main1'
-navbarBtn1A.onclick = navLabel
+navbarBtn1A.onclick = () => navLabel(navLabel1);
 navbarBtn1A.textContent = 'Home'
 navbarBtnDiv1.append(navbarBtn1A)
 // first a label
@@ -45,7 +45,7 @@ navbarBtn.append(navbarBtnDiv2)
 // second a
 const navbarBtnA2 = document.createElement('a')
 navbarBtnA2.href = '#main3'
-navbarBtnA2.onclick = navLabel
+navbarBtnA2.onclick = () => navLabel(navLabel2);
 navbarBtnA2.textContent = 'About Us'
 navbarBtnDiv2.append(navbarBtnA2)
 // second a label
@@ -60,7 +60,7 @@ navbarBtn.append(navbarBtnDiv3)
 // third a
 const navbarBtnA3 = document.createElement('a')
 navbarBtnA3.href = '#';
-navbarBtnA3.onclick = ghostPageEnter;
+navbarBtnA3.onclick = () => navLabel(navLabel3);
 navbarBtnA3.textContent = 'IQ Test'
 navbarBtnDiv3.append(navbarBtnA3)
 // third a label
@@ -75,7 +75,7 @@ navbarBtn.append(navbarBtnDiv4)
 // forth a
 const navbarBtnA4 = document.createElement('a')
 navbarBtnA4.href = '#contactUs'
-navbarBtnA4.onclick = navLabel
+navbarBtnA4.onclick = () => navLabel(navLabel4);
 navbarBtnA4.textContent = 'Contact Us'
 navbarBtnDiv4.append(navbarBtnA4)
 // label 4
@@ -502,13 +502,16 @@ main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A.textContent = 'admin@gmai
 main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3.append(main5TagcontactUsFooterBox_preLeftAndRight_Right_Div3A)
 // js convert ends
 
-// navbar labels function for focus
-let navLabels = [navLabel1,navLabel2,navLabel3,navLabel4]
-function navLabel(meow) {
-  // navLabels.style = 'opacity:0'
-  // selectedLabel.style = 'opavity:1'
-  meow.style = 'color:green'
-  console.log('navlabel selected');
+// Array for labels
+let navLabels = [navLabel1, navLabel2, navLabel3, navLabel4];
+// Defining navbarLaeb function in order to change colors when selected
+function navLabel(selectedLabel) {
+  // using foreach method to selec every one of em(navlabels) and making them invisible(opacity 0)
+  navLabels.forEach(label => {
+    label.style.opacity = '0';
+  });
+  //making the selected label in navbar appear
+  selectedLabel.style.opacity = '1'
 }
 
 
