@@ -144,24 +144,23 @@ verifyDiv.append(reCAPTHCAIcon)
 ///
 //
 //// ghost js codes
-var pageX = $(document).width();
-var pageY = $(document).height();
+var pageX = document.documentElement.clientWidth;
+var pageY = document.documentElement.clientHeight;
 var mouseY = 0;
 var mouseX = 0;
 
-$(document).mousemove(function (event) {
+document.addEventListener('mousemove', function (event) {
     // verticalAxis
-    mouseY = event.pageY;
+    mouseY = event.clientY;
     var yAxis = ((pageY / 2 - mouseY) / pageY) * 300;
 
     // horizontalAxis
-    mouseX = event.pageX / -pageX;
+    mouseX = event.clientX / -pageX;
     var xAxis = -mouseX * 100 - 100;
 
     // Ensure the selector targets the correct eyes container
-    $(".box__ghost-eyes").css({
-        transform: "translate(" + xAxis + "%," + -yAxis + "%)" // Corrected the transform syntax
-    });
+    var box__ghostEyes = document.querySelector('.box__ghost-eyes');
+    box__ghostEyes.style.transform = "translate(" + xAxis + "%," + -yAxis + "%)";
 });
 
 //a tag when  funtion start.. will dipaley under verification
