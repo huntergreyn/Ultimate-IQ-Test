@@ -1,6 +1,7 @@
 body,html {
   margin: 0px;
   padding: 0px;
+  background-color: #683b97;
 }
 @font-face {
   font-family: JetBrainsMono;
@@ -11,12 +12,29 @@ body,html {
   display: flex;
 }
 #main {
+  position: relative;
+  background-color: #683b97;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 0;
+}
+#leftDiv {
+  background-color: #683b97;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: -10px;
+  display: flex;
+  align-items: center;
+}
+#leftDivImg {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 20%;
 }
 #startAgainBtn {
   background-color: #916cb6;
@@ -45,15 +63,17 @@ div > p {
   font-family: JetBrainsMono;
 }
 #mainLeft {
-  width: 743px;
+  width: 650px;
   height: 100vh;
   background-image: url(docs/image\ 1\ \(1\).png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: 2;
 }
 #mainRight {
-  width: 1000px;
+  border-radius: 40px 0px 0px 40px;
+  width: 850px;
   height: 100vh;
   float: right;
   background-color: white;
@@ -63,9 +83,9 @@ div > p {
   z-index: 10;
 }
 #rightBackground {
-  width: 95%;
-  height: 95%;
-  background: #c6cff242;
+  width: 92%;
+  height: 92%;
+  background: #f0f3fc;
   display: flex;
   align-items: center;
   flex-direction: column;

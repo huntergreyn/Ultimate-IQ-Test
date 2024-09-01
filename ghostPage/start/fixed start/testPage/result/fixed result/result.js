@@ -5,6 +5,15 @@ document.body.append(containerTag);
 const mainDiv = document.createElement('div');
 mainDiv.id = ('main');
 containerTag.append(mainDiv);
+const leftDiv = document.createElement('div')
+leftDiv.id = 'leftDiv'
+mainDiv.append(leftDiv)
+//
+const leftDivImg = document.createElement('img')
+leftDivImg.id = 'leftDivImg';
+leftDivImg.src = "./docs/dd2c927be9d6377dfae2215b91e3a4f4.gif"
+leftDiv.append(leftDivImg)
+//
 const mainRightDiv = document.createElement('div');
 mainRightDiv.id = ('mainRight');
 mainDiv.append(mainRightDiv);

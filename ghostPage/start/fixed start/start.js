@@ -89,3 +89,13 @@ startTestBtn.textContent = "Start Test";
 boxDiv.append(startTestBtn);
 
 console.log(containerTag);
+//
+const leftDiv = document.createElement('div')
+leftDiv.id = 'leftDiv'
+mainDiv.append(leftDiv)
+//
+const leftDivImg = document.createElement('img')
+leftDivImg.id = 'leftDivImg';
+leftDivImg.src = "./docs/bolo.gif"
+leftDiv.append(leftDivImg)
+//
