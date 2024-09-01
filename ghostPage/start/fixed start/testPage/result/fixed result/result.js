@@ -77,20 +77,20 @@ itemsDiv.append(menuUl);
 const li1 = document.createElement('li');
 menuUl.append(li1);
 const liA1 = document.createElement('a')
-liA1.href = '#'
+liA1.href = 'https://alirezanoshad.github.io/Ultimate-IQ-Test/'
 liA1.textContent = 'Home';
 li1.append(liA1)
 const li2 = document.createElement('li');
 menuUl.append(li2);
 const liA2 = document.createElement('a')
-liA2.href = '#'
+liA2.href = 'https://alirezanoshad.github.io/Ultimate-IQ-Test/'
 liA2.textContent = 'About Us';
 li2.append(liA2)
 const li3 = document.createElement('li');
 
 menuUl.append(li3);
 const liA3 = document.createElement('a')
-liA3.href = '#'
+liA3.href = 'https://alirezanoshad.github.io/Ultimate-IQ-Test/'
 liA3.textContent = 'Contact US';
 li3.append(liA3)
 const startBtn = document.createElement('div');
