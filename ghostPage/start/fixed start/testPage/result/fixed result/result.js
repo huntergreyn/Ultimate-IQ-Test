@@ -50,7 +50,7 @@ result.append(iqDescription)
 // personIconImg.src = "docs/image.png2.png";
 const startAgainBtn = document.createElement('a');
 startAgainBtn.id = ('startAgainBtn');
-startAgainBtn.href = "./testPage/testPages.html";
+startAgainBtn.href = "/ghostPage/start/fixed start/testPage/testPages.html";
 startAgainBtn.textContent = "Start Again";
 boxDiv.append(startAgainBtn);
 const mainLeftDiv = document.createElement('div');
