@@ -15,7 +15,7 @@ body {
 }
 .mainTop {
   background: linear-gradient(180deg, #9D73BF 0%, #8863A5 46.98%, #593E73 100%);
-  height: 600px;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -97,9 +97,18 @@ body {
 
 .answerImages {
   flex-wrap: nowrap;
-align-items: end;
-margin-bottom: 100px;
+  align-items: end;
+  margin-bottom: 100px;
 }
+
+.answerImages img {
+  margin: 12px;
+}
+.answerImages img:hover {
+background-color: rgba(254, 184, 254, 0.219);
+  border-radius: 12px;
+}
+
 #container {
   position: relative;
 }
@@ -116,6 +125,7 @@ margin-bottom: 100px;
   margin-left: 25px;
 }
 .mainTestImg {
+  margin-bottom: 150px;
   width: 100%;
   display: flex;
   align-items: center;
