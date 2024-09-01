@@ -18,6 +18,10 @@ navbar.append(navbarLogo)
 const navbarLogoImg = document.createElement('img')
 navbarLogoImg.src = './docs/Component 1.png'
 navbarLogo.append(navbarLogoImg)
+//triangle div
+const triangle = document.createElement('div')
+triangle.id = 'triangle'
+navbarLogo.append(triangle)
 ///second div for nav btns(has a*4 within it)
 const navbarBtn = document.createElement('div')
 navbarBtn.classList.add('navBtn')
