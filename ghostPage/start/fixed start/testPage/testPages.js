@@ -296,8 +296,14 @@ let counter = document.getElementById('leftDivP1');
 const container = document.getElementsByClassName('container')
 const main = document.querySelector('.main')
 const loadingDiv = document.getElementById('loadingDiv')
+let time = document.getElementById('rightSpan2');
+time.textContent = 59;
 
+function timer(){
+    time.textContent = time.textContent - 1;
+}
 
+setInterval(timer, 1000);
 
 // Array to store values
 let valueArray = [];
