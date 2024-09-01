@@ -30,6 +30,7 @@ body,html {
   left: -10px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 #leftDivImg {
   width: 500px;
