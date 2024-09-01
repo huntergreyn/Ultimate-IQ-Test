@@ -49,7 +49,7 @@ const testResult = document.createElement('p')
 testResult.textContent = 'Test Result'
 result.append(testResult)
 const iq = document.createElement('p')
-iq.textContent = 'IQ 120'
+iq.textContent = localStorage.getItem('iqScore');
 iq.id='IQ'
 result.append(iq)
 const iqDescription = document.createElement('p')
